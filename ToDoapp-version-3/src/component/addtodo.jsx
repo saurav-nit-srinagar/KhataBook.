@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 function Addtodo({ onNewitem }) {
   const [todoName, settodoName] = useState("");
@@ -48,7 +49,7 @@ function Addtodo({ onNewitem }) {
             className="btn btn-success"
             onClick={handleAddButton}
           >
-            ADD
+            <MdOutlineAddShoppingCart />
           </button>
         </div>
       </div>

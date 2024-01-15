@@ -1,3 +1,4 @@
+import { MdDelete } from "react-icons/md";
 function Todo({ itemName, itemdate, ondeleteKey }) {
   return (
     <div id="row" className="row">
@@ -13,7 +14,7 @@ function Todo({ itemName, itemdate, ondeleteKey }) {
           className="btn btn-danger"
           onClick={() => ondeleteKey(itemName)}
         >
-          Delete
+          <MdDelete />
         </button>
       </div>
     </div>
